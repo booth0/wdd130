@@ -1,0 +1,21 @@
+h1, a{
+    color: chartreuse;
+}
+
+#emphasis{
+    color: steelblue
+}
+
+#active{
+    background-color: red;
+    color: white;
+}
+
+.room{
+    border: 2px solid orange; 
+}
+
+.potato{
+    color: red
+
+}
