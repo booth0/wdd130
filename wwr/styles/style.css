@@ -3,7 +3,9 @@
   --heading-font: "Kalam";
   --paragraph-font: "Noto Serif", Helvetica, sans-serif;
 }
-
+h1.home-title {
+    color: white;
+}
 .home-title, h2, #navbar {
     font-family: 'Kalam', Helvetica, sans-serif;
 }
@@ -164,7 +166,7 @@ main section img {
 }
 main.home-grid {
     display: grid;
-    grid-template-columns: (10);
+    grid-template-columns: repeat(10, 1fr);
 }
 .card-img, .mountains {
     width: 100%;
@@ -174,7 +176,7 @@ main.home-grid {
     grid-row: 2/3;
 }
 .camping-card {
-    grid-column: 5/8;
+    grid-column: 5/7;
     grid-row: 2/3;
 }
 .rapids-card {
