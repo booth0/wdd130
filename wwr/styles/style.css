@@ -6,7 +6,7 @@
 h1.home-title {
     color: white;
 }
-.home-title, h2, #navbar {
+.home-title, .rivers-title, h2, #navbar {
     font-family: 'Kalam', Helvetica, sans-serif;
 }
 h4, .button-box, p, .join {
@@ -18,7 +18,7 @@ div#content {
     display: block;
     margin: 0 auto;
 }
-nav a, #hero-msg h1, #hero-msg h4, .button-box, main {
+.rivers-title, nav a, #hero-msg h1, #hero-msg h4, .button-box, main {
     text-align: center;
 }
 #background {
@@ -195,6 +195,36 @@ main.home-grid {
 }
 
 
+hr {
+    padding: 3%;
+}
+
+div.rivers-text {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.text-grid {
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+.rivers-text {
+    width: 100%;
+    font-size: .65em;
+    grid-column: 2/3;
+}
+
+.rivers-img {
+    width:100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
