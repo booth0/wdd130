@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Labrada&family=Oswald:wght@300&family=Zen+Maru+Gothic&display=swap');
+h1, h2 {
+    font-family: "Labrada", Helvetica, sans-serif;
+}
+p {
+    max-width: 70%;
+    font-family: "Arvo", Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+header {
+    background-color:#231f20;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.logo {
+    width: 120px;
+    border-radius: 1em;
+    border: 5px solid #17A398;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+    
+}
+#main-grid {
+    margin: 0 auto;
+    text-align: center;
+}
