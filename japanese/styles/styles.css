@@ -31,19 +31,67 @@ header {
 
 h3{
     font-size: 10em;
-    border: 5px solid #17A398;
     width: 50%;
     margin: 0 auto;
 }
-.slideshow-container{ 
+
+
+
+  * {box-sizing: border-box}
+  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10 {
+      display: none;
+  }
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    width: 25%;
     position: relative;
-    width: 50%;
+    margin: auto;
+    border: 5px solid #17A398;
   }
   
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  h3 {
+      font-size: 15em;
+      display: block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+  }
+  
+  .text {
+    color: white;
+    font-size: 13em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   
   .overlay {
@@ -55,75 +103,44 @@ h3{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .1s ease;
+    transition: .5s ease;
     background-color: #231f20;
   }
   
-  .slideshow-container:hover .overlay {
+  #a:hover .overlay, #i:hover .overlay, #u:hover .overlay, #e:hover .overlay, #o:hover .overlay {
     opacity: 1;
-    width: 50%;
-    margin: 0 auto;
   }
-
-  .ka:hover {
+  #ka:hover .overlay, #ki:hover .overlay, #ku:hover .overlay, #ke:hover .overlay, #ko:hover .overlay {
     opacity: 1;
-    width: 50%;
-    margin: 0 auto;
-    color: chartreuse;
+  }
+  #sa:hover .overlay, #shi:hover .overlay, #su:hover .overlay, #se:hover .overlay, #so:hover .overlay {
+    opacity: 1;
+  }
+  #ta:hover .overlay, #chi:hover .overlay, #tsu:hover .overlay, #te:hover .overlay, #to:hover .overlay {
+    opacity: 1;
+  }
+  #na:hover .overlay, #ni:hover .overlay, #nu:hover .overlay, #ne:hover .overlay, #no:hover .overlay {
+    opacity: 1;
+  }
+  #ha:hover .overlay, #hi:hover .overlay, #fu:hover .overlay, #he:hover .overlay, #ho:hover .overlay {
+    opacity: 1;
+  }
+  #ma:hover .overlay, #mi:hover .overlay, #mu:hover .overlay, #me:hover .overlay, #mo:hover .overlay {
+    opacity: 1;
+  }
+  #ya:hover .overlay, #yu:hover .overlay, #yo:hover .overlay {
+    opacity: 1;
+  }
+  #ra:hover .overlay, #ri:hover .overlay, #ru:hover .overlay, #re:hover .overlay, #ro:hover .overlay {
+    opacity: 1;
+  }
+  #wa:hover .overlay, #wo:hover .overlay, #n:hover .overlay {
+    opacity: 1;
   }
   
-  .text {
-    color: white;
-    font-size: 10em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
   }
-
-
-
-
-* {box-sizing: border-box}
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10 {
-    display: none
-}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
