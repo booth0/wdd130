@@ -3,6 +3,13 @@ h1, h2 {
     font-family: "Labrada", Helvetica, sans-serif;
 
 }
+#all-flashcards p {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+#main-grid p:nth-of-type(1) {
+  margin-bottom: 5%;
+}
 nav a {
   color: white;
   padding: 35px;
